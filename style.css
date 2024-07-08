@@ -91,6 +91,7 @@ ul {
 
   line-height: 80px;
   text-decoration: none;
+  display: inline;
 }
 
 .nav ul {
@@ -119,7 +120,7 @@ ul {
   transition: 0.5s;
 }
 
-.brand i {
+.nav i {
   font-size: 40px;
   color: aliceblue;
   float: right;
@@ -131,7 +132,9 @@ ul {
 #toggle {
   display: none;
 }
-
+#toggle label {
+  display: none;
+}
 @media (max-width: 952px) {
   .nav__logo {
     font-size: 1.5rem;
@@ -143,7 +146,7 @@ ul {
 }
 
 @media (max-width: 858px) {
-  .brand i {
+  .nav i {
     display: block;
   }
   ul {
@@ -154,6 +157,7 @@ ul {
     height: 100vh;
     background-color: rgb(17, 52, 117);
     text-align: center;
+    transition: 0.5s;
   }
 
   .nav ul li {
